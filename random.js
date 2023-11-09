@@ -33,7 +33,7 @@ let randomNumer = Math.round(Math.random()*36)
     meinePunkte.innerHTML = kontoStand;
     if(kontoStand <= 0){
 
-        meinePunkte.innerHTML = "You don't have money" +"<br>" + "😩😬😵‍💫☹️";
+        meinePunkte.innerHTML = "Du hast kein Geld " +"<br>" + "😩😬😵‍💫☹️";
 
     }
 })
