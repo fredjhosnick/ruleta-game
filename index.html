@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="cientificos-ruleta-casino-juego.jpg" alt="rulet" />
+      <div class="btns">
+        <button id="btn">Spielen</button>
+
+        <button id="gerade">Gerade</button>
+
+        <button id="ungerade">Ungerade</button>
+      </div>
+      <div class="inputs">
+        <label for="numberInput">Zahl:</label>
+        <input id="numberInput" type="text" />
+        <label for="einsatz">Input Money:</label>
+        <input id="einsatz" type="text" />
+      </div>
+
+      <div class="displayNumbers">
+        <div class="randomInput card">
+          <h2>Input Value:</h2>
+          <p id="numberInputValue"></p>
+        </div>
+        <div class="inputValue card">
+          <h2>Random Nummer:</h2>
+          <p id="numberRandom"></p>
+        </div>
+        <div class="result card">
+          <p id="win" class="grenn red">☹️😁?</p>
+        </div>
+        <div class="kontostand card">
+          <p id="kontostand">💰💰</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="random.js"></script>
+  </body>
+</html>
