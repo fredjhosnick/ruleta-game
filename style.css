@@ -65,39 +65,50 @@ h2 {
   color: white;
 }
 .displayNumbers {
-  width: 65%;
-  height: 600px;
+  width: 100%;
+  height: 400px;
   background-color: rgb(72, 72, 183);
-  margin: 30px auto;
+  margin: 20px auto;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  gap: 10;
+  gap: 5px;
   border-radius: 10px;
 }
 .card {
   background-color: rgb(71, 69, 69);
-  width: 260px;
-  height: 260px;
+  width: 210px;
+  height: 220px;
   display: flex;
   flex-direction: column;
-  margin: 20px 30px;
+  margin: 6px 15px;
   text-align: center;
   border-radius: 10px;
 }
 .card h2 {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400px;
   color: white;
 }
 .card p {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 400px;
   color: white;
 }
 .result p,
-.kontostand p {
+.kontostand p,
+.inputValue p {
   margin: auto;
+}
+.multiPlay {
+  width: 100%;
+  height: 70vh;
+  margin: 5px auto;
+  text-align: start;
+}
+.multiPlay p {
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -127,23 +138,28 @@ h2 {
     margin-right: 20px;
   }
   .displayNumbers {
-    width: 95%;
-    height: 55vh;
+    width: 100%;
+    height: 20vh;
     background-color: rgb(72, 72, 183);
     align-items: center;
   }
   .card {
     background-color: rgb(71, 69, 69);
-    width: 180px;
-    height: 200px;
-    margin: 20px;
+    width: 120px;
+    height: 140px;
+    margin: 2px;
     border-radius: 10px;
   }
   .card h2 {
-    font-size: 25px;
+    font-size: 16px;
   }
   .card p {
-    font-size: 30px;
+    font-size: 20px;
+  }
+  .multiPlay {
+    width: 100%;
+    height: 42vh;
+    text-align: start;
   }
 }
 
@@ -155,49 +171,58 @@ h2 {
     padding: 10px;
   }
   .btns {
-    margin: 70px auto 20px;
+    margin: 50px auto 20px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
   }
   .btns button {
     font-family: "Playpen Sans", cursive;
+    font-size: 20px;
     color: white;
     background-color: rgb(72, 72, 183);
     border: none;
     margin: 10px;
+    cursor: pointer;
   }
   .inputs {
     width: 100%;
-    gap: 10px;
+    align-items: center;
     justify-content: center;
   }
 
   .inputs input {
     text-align: center;
-    width: 30%;
+    width: 15%;
+    height: 20%;
   }
   .displayNumbers {
-    width: 95%;
-    height: 55vh;
+    width: 100%;
+    height: 15vh;
     background-color: rgb(72, 72, 183);
-    margin: 30px auto;
+    margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10;
+    align-items: flex-start;
+    gap: 2px;
     border-radius: 10px;
   }
   .card {
     background-color: rgb(71, 69, 69);
-    width: 150px;
-    height: 190px;
-    margin: 20px;
+    width: 110px;
+    height: 120px;
+    margin: 2px;
     border-radius: 10px;
   }
   .card h2 {
-    font-size: 20px;
+    font-size: 12px;
   }
   .card p {
-    font-size: 25px;
+    font-size: 15px;
+  }
+  .multiPlay {
+    width: 100%;
+    height: 42vh;
+    text-align: start;
   }
 }

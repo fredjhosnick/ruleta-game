@@ -6,6 +6,10 @@ let meinePunkte = document.getElementById("kontostand");
 let buttogerade = document.getElementById("gerade");
 let buttonUngerade = document.getElementById("ungerade");
 let inputmoney = document.getElementById("einsatz");
+let btn5 = document.getElementById("btn5");
+let btn10 = document.getElementById("btn5");
+let btn100 = document.getElementById("btn5");
+
 
 let kontoStand = 500;
 
