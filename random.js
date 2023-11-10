@@ -10,6 +10,7 @@ let btn5 = document.getElementById("btn5");
 let btn10 = document.getElementById("btn10");
 let btn20 = document.getElementById("btn20");
 let btn100 = document.getElementById("btn100");
+let multiPlay = document.getElementById("multiPlay");
 
 
 let kontoStand = 500;
@@ -24,7 +25,7 @@ let randomNumer = Math.round(Math.random()*36)
   
     if(randomNumer == spielerZahl){  
            
-        kontoStand += inputmoney.value*2;
+        kontoStand += inputmoney.value*36;
         document.getElementById("win").innerHTML = "Du hast gewonen😁";
         document.getElementById("win").style.color="green";
         
@@ -54,7 +55,7 @@ buttogerade.addEventListener("click", ()=>{
 
     inputmoney.value;
     if(gerade % 2 == 0){
-           kontoStand += inputmoney.value*2;
+           kontoStand += inputmoney.value*36;
            document.getElementById("win").innerHTML = "Du hast gewonen😁";
         document.getElementById("win").style.color="green";
       
@@ -74,7 +75,7 @@ buttonUngerade.addEventListener("click", ()=>{
     numberRandom.innerHTML = ungerade ;
     inputmoney.value;
     if(ungerade % 2 != 0){
-        kontoStand += inputmoney.value*2;
+        kontoStand += inputmoney.value*36;
         document.getElementById("win").innerHTML = "Du hast gewonen😁";
 
         document.getElementById("win").style.color="green";
@@ -88,6 +89,55 @@ buttonUngerade.addEventListener("click", ()=>{
     if(kontoStand <=0){
         meinePunkte.innerHTML = "You don't  have  money" +"<br>" + "😩😬😵‍💫☹️🥴";
     }
+});
+
+btn5.addEventListener("click", ()=>{
+
+    for(let i = 0; i < 5 ; i++){
+
+        let randomMultiplayNummer = Math.round(Math.random()*36);
+
+        multiPlay.innerHTML += randomMultiplayNummer +", ";
+
+    }
+
+
+});
+btn10.addEventListener("click", ()=>{
+
+    for(let i = 0; i < 10 ; i++){
+
+        let randomMultiplayNummer = Math.round(Math.random()*36);
+
+        multiPlay.innerHTML += randomMultiplayNummer + ",  ";
+
+    }
+
+
+})
+btn20.addEventListener("click", ()=>{
+    for(let i = 0; i < 20 ; i++){
+
+        let randomMultiplayNummer = Math.round(Math.random()*36);
+
+        multiPlay.innerHTML += randomMultiplayNummer + ",";
+
+    }
+
+
+});
+
+btn100.addEventListener("click", ()=>{
+
+    for(let i = 0; i < 100 ; i++){
+
+        let randomMultiplayNummer = Math.round(Math.random()*36);
+
+        multiPlay.innerHTML += randomMultiplayNummer + "," ;
+
+    }
+
+
 });
 
 
